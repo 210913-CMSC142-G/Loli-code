@@ -1,0 +1,79 @@
+/*
+    Domer,Lolibeth A.
+    Death First Search- Ep. 1
+    CMSC 142
+    Java
+*/
+
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+class Player {
+
+    public static void main(String args[]) {
+       
+        Scanner in = new Scanner(System.in);
+        int N = in.nextInt(); // the total number of nodes in the level, including the gateways
+        int L = in.nextInt(); // the number of links
+        int E = in.nextInt(); // the number of exit gateways
+        ArrayList<String> links = new ArrayList<String>(),p_links;
+        int GW[]=new int[E];
+       
+        int EI=0;
+        for (int i = 0; i < L; i++) {
+            int N1 = in.nextInt(); // N1 and N2 defines a link between these nodes
+            int N2 = in.nextInt();
+            links.add(Integer.toString(N1)+" "+Integer.toString(N2));
+        }
+        for (int i = 0; i < E; i++) {
+             EI = in.nextInt(); // the index of a gateway node
+             GW[i]=EI;
+        }
+
+        // game loop
+       while (true) {
+            int z=0,SI = in.nextInt(); 
+            p_links=null;
+            p_links=new ArrayList<String>();
+            
+            //getting possible links connected to the SI
+            for (int i = 0; i < links.size(); i++) {
+                Boolean f=links.get(i).contains(Integer.toString(SI));
+                Boolean g=false;
+                //prioritizing to those who are connected to the gateway/s
+                for (int j=0;j<GW.length;j++){
+                    String s1=Integer.toString(GW[j])+" "+Integer.toString(SI);
+                    if (links.get(i).equals(s1)){
+                        g=true;
+                        p_links.add(0,s1);
+                        break;
+                    }
+                    String s2=Integer.toString(SI)+" "+Integer.toString(GW[j]);
+                     if (links.get(i).equals(s2)){
+                         g=true;
+                        p_links.add(0,s2);
+                        break;
+                    }
+                }//endloop              
+                if (f&&g)
+                    continue;
+                else if (f)
+                    p_links.add(links.get(i));
+            }//endloop       
+
+             if (z==L-1)
+                break;
+            z++;
+
+            //deleting the removed link from the list
+            for (int j = 0; j < p_links.size(); j++) {
+                 if(p_links.get(0)==links.get(j)){
+                        links.remove(j);
+                    }
+            }
+
+            System.out.println(p_links.get(0));
+       }//endwhileloop
+    }
+}
