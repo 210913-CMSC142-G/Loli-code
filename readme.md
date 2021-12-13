@@ -39,14 +39,14 @@ The shortest path problem is finding the shortest minimum cost path from a sourc
    5.	**Flighting Agenda** have certain access to database on flights such as the arrival and departure time that computes the earliest arrival time for the destination from the origin airport. Therefore, it can determine which flights are the shortest and have minimum cost towards the customer’s destination.  
 ## Demo
    1.	Java 
-          - Dijkstra's Algorithm (Java):
-          - Bellman-Ford's Algorithm (Java):
-          - Floyd-Warshall's Algorithm (Java):
+          - Dijkstra's Algorithm (Java): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/Dijkstra_Algorithm.java
+          - Bellman-Ford's Algorithm (Java): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/Bellman_Ford_Algorithm.java
+          - Floyd-Warshall's Algorithm (Java): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/Floyd_Warshall_Algorithm.java
    3.	Gama Platform
           - Shortest Path Problem simulation (GAMA Platform):
-              - Java2D:
-              - 3d or opengl: 
-          - Emergency Exit simulation (GAMA Platform): 
+              - Java2D: https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/ShortestPath.gaml
+              - 3d or opengl: https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/ShortestPath3d.gaml
+          - Emergency Exit simulation (GAMA Platform): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/EmergencyExit.gaml
 ## References
   - GeeksforGeeks.(2020).Application of Dijkstra’s Shortest Path. https://www.geeksforgeeks.org/applications-of-dijkstras-shortest-path-algorithm/
   -	Statistics.com.(2021).Directed Vs. Undirected Network. https://www.statistics.com/glossary/directed-vs-undirected-network/
