@@ -1,4 +1,4 @@
-# Finding the Shortest Path using three Different Algorithms
+# Finding the Shortest Path using Three Different Algorithms
 The shortest path problem is finding the shortest minimum cost path from a source to a specific destination in a network/graph. This is an NP (Nondeterministic Polynomial) Complete Problem, since it is a computational problem with many efficient solution algorithms.  
 ## Introduction
    1.	**Graph** is a mathematical representation of a network and describes the relationship between lines and points. 
