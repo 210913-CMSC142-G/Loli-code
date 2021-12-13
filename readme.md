@@ -37,13 +37,13 @@ The shortest path problem is finding the shortest minimum cost path from a sourc
    3.	**IP Routing**; Internet have an Open Shortest Path First (OPSF) Protocol that is used to find the best shortest cost path between the source router and destination router. Also, Dijkstra’s algorithm is widely used in routing protocols. 
    4.	**Smart Grid: Power System**; This is a two-way communication from the producers to consumers. In which the sources controls and automates the needs of the customers. This portrays the shortest problem path to which transmission line it will use towards the consumers destination. 
    5.	**Flighting Agenda** have certain access to database on flights such as the arrival and departure time that computes the earliest arrival time for the destination from the origin airport. Therefore, it can determine which flights are the shortest and have minimum cost towards the customer’s destination.  
-## Demo
+## Demonstration
    1.	Java 
           - Dijkstra's Algorithm (Java): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/Dijkstra_Algorithm.java
           - Bellman-Ford's Algorithm (Java): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/Bellman_Ford_Algorithm.java
           - Floyd-Warshall's Algorithm (Java): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/Floyd_Warshall_Algorithm.java
    3.	Gama Platform
-          - Shortest Path Problem simulation (GAMA Platform):
+          - Shortest Path Problem simulation (GAMA Platform)
               - Java2D: https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/ShortestPath.gaml
               - 3d or opengl: https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/ShortestPath3d.gaml
           - Emergency Exit simulation (GAMA Platform): https://github.com/210913-CMSC142-G/Loli-code/blob/main/Shortest_Path_Java_and_GAMA_Platform/EmergencyExit.gaml
