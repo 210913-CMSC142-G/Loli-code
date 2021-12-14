@@ -7,7 +7,7 @@
 model polygon
 global {
 	//Import of the shapefile containing the different polygons
-	file shape_file_in <- file('../includes/gis/squareHole.shp') ;
+	file shape_file_in <- file('squareHole.shp');
 	graph the_graph;
 	
 	geometry shape <- envelope(shape_file_in);
